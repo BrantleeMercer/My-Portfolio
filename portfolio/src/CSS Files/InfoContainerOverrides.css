@@ -1,0 +1,38 @@
+﻿.Info-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    margin: 1vw 1vw;
+}
+
+.Images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 30vw;
+    height: 30vh;
+}
+
+.Synopsis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-style: dashed;
+    max-width: 50vw;
+}
+
+.Completion {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
