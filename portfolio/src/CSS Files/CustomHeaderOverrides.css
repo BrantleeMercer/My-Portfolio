@@ -1,0 +1,25 @@
+﻿.Custom-Header-Main {
+    display: flex;
+    flex-direction: row;
+    background-color: #d3d3d3;
+    color: #000000;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    min-height: 15vh;
+}
+.Name-Section {
+    display: flex;
+    flex-direction: column;
+}
+
+.Links-Section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 15vw;
+}
+
+.Links-Section button{
+    min-width: 4vw;
+}
