@@ -21,7 +21,7 @@ export default function InfoContainer(props) {
             </div>
             <div className={"Synopsis"}>
                 <h2>{props.courseTitle}</h2>
-                {props.courseDescription}
+                <p>{props.courseDescription}</p>
                 <div className={"Completion"}>
                     <h4>Completed On: {props.dateCompleted}</h4>
                     <button onClick={() => {handleClick(props.destinationLinkURL)}} 
