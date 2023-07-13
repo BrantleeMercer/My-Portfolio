@@ -1,5 +1,10 @@
 ﻿import {useState, useEffect} from 'react';
 import '../CSS Files/CarouselOverrides.css';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {
+    faArrowLeftLong,
+    faArrowRightLong,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Carousel = (props) => {
     const {children} = props;
@@ -18,9 +23,6 @@ const Carousel = (props) => {
         }
     }
     
-    
-
-// Set the length to match current children from props
     useEffect(() => {
         setLength(children.length);
     }, [children]);
@@ -29,7 +31,7 @@ const Carousel = (props) => {
         <div className="carousel-container">
             <div className="carousel-wrapper">
                 { currentIndex > 0 && <button onClick={prev} className="left-arrow">
-                    &lt;
+                    <FontAwesomeIcon icon={faArrowLeftLong}/>
                 </button>}
                 <div className="carousel-content-wrapper">
                     <div className="carousel-content" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
@@ -37,7 +39,7 @@ const Carousel = (props) => {
                     </div>
                 </div>
                 { currentIndex < (length - 1) && <button onClick={next} className="right-arrow">
-                    &gt;
+                    <FontAwesomeIcon icon={faArrowRightLong}/>
                 </button>}
             </div>
         </div>

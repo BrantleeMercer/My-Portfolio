@@ -1,8 +1,6 @@
-﻿import { useState, useEffect} from "react";
-import '../CSS Files/CustomHeaderOverrides.css'
+﻿import '../CSS Files/CustomHeaderOverrides.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { ReactComponent as GitHubLogo } from "../Saved-SVG-Files/GitHubLogo.svg";
 import { ReactComponent as LinkedInLogo } from "../Saved-SVG-Files/LinkedInLogo.svg";
 import { ReactComponent as EmailLogo } from "../Saved-SVG-Files/envelope-solid.svg";

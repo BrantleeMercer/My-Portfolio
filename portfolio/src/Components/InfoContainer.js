@@ -1,9 +1,7 @@
-﻿import React, {useState, useEffect} from "react";
+﻿import React from "react";
 import '../CSS Files/InfoContainerOverrides.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBowlingBall} from "@fortawesome/free-solid-svg-icons";
 import Carousel from "./Carousel";
 
 export default function InfoContainer(props) {

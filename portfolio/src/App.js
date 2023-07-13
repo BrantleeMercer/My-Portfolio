@@ -1,5 +1,4 @@
 import './App.css';
-import {useState, useEffect} from "react";
 import InformationContainer from './Components/InfoContainer';
 import MyHeader from './Components/CustomHeader';
 import CourseInfo from './Components/CourseInformation';
