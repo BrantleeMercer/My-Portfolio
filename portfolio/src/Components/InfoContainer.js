@@ -8,10 +8,9 @@ import Carousel from "./Carousel";
 
 export default function InfoContainer(props) {
     
-    /*
-    * get a list of images in the folder for each course
-    * map them to a carousel img tag
-    */
+    const handleClick = (dest) => {
+        window.open(dest);
+    }
     
     return (
         <div className={"Info-Container"}>
@@ -27,7 +26,10 @@ export default function InfoContainer(props) {
                 {props.courseDescription}
                 <div className={"Completion"}>
                     <h4>Completed On: {props.dateCompleted}</h4>
-                    <button type={"button"} className={"btn btn-success"}>Go To Project</button>
+                    <button onClick={() => {handleClick(props.destinationLinkURL)}} 
+                            className={"btn btn-success"}>
+                        Go To Project
+                    </button>
                 </div>
             </div>
         </div>

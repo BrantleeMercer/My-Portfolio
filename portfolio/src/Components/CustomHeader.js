@@ -9,9 +9,10 @@ import { ReactComponent as EmailLogo } from "../Saved-SVG-Files/envelope-solid.s
 import Resume from "../Misc/Brantlee_Mercer_Resume.pdf";
 
 export default function CustomHeader(props) {
-    const gitHubLocation = "https://github.com/BrantleeMercer?tab=repositories";
-    const linkedInLocation = "https://www.linkedin.com/in/brantlee-mercer-433012112/";
-    const emailAddress = "brantleemercer@gmail.com";
+    
+    const handleGoToNewPage = (dest) => {
+        window.open(dest);
+    }
     
     return (
         <div className={"Custom-Header-Main"}>
@@ -24,17 +25,13 @@ export default function CustomHeader(props) {
                 </a>
             </div>
             <div className={"Links-Section"}>
-                <a href={gitHubLocation}>
-                    <button type={"button"} className={"btn"}>
-                        <GitHubLogo />
-                    </button>
-                </a>
-                <a href={linkedInLocation}>
-                    <button type={"button"} className={"btn"}>
-                        <LinkedInLogo />
-                    </button>
-                </a>
-                <a href={`mailto:${emailAddress}`}>
+                <button onClick={() => {handleGoToNewPage(props.githubLocation)}} className={"btn"}>
+                    <GitHubLogo />
+                </button>
+                <button onClick={() => {handleGoToNewPage(props.linkedInLocation)}} className={"btn"}>
+                    <LinkedInLogo />
+                </button>
+                <a href={`mailto:${props.myEmail}`}>
                     <button type={"button"} className={"btn"}>
                         <EmailLogo />
                     </button>
