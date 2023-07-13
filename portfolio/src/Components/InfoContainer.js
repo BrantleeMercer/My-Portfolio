@@ -1,4 +1,4 @@
-﻿import {useState, useEffect} from "react";
+﻿import React, {useState, useEffect} from "react";
 import '../CSS Files/InfoContainerOverrides.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -13,14 +13,13 @@ export default function InfoContainer(props) {
     * map them to a carousel img tag
     */
     
-    
-    
     return (
         <div className={"Info-Container"}>
             <div className={"Images"}>
                 <Carousel>
-                    <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
-                    <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
+                    {props.courseImageFolder.map((imgSrc, index) => 
+                        (<img src={imgSrc.src} key={index} alt="image"/>)
+                    )}
                 </Carousel>
             </div>
             <div className={"Synopsis"}>

@@ -1,5 +1,5 @@
 ﻿import {useState, useEffect} from 'react';
-import '../CSS Files/CarouselOverrides.css'; 
+import '../CSS Files/CarouselOverrides.css';
 
 const Carousel = (props) => {
     const {children} = props;
@@ -17,6 +17,8 @@ const Carousel = (props) => {
             setCurrentIndex(prevState => prevState - 1);
         }
     }
+    
+    
 
 // Set the length to match current children from props
     useEffect(() => {
