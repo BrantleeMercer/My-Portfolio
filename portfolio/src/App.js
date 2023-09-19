@@ -6,6 +6,7 @@ import SpaceShooterImages from './Image Gallery/Space Shooter/ImagePool';
 import BeautifulGamesImages from './Image Gallery/Beautiful Games/ImagePool';
 import NewInputSystemCCImages from './Image Gallery/New Input CC/ImagePool';
 import GLI1Images from './Image Gallery/GLI 1/ImagePool';
+import PlatformerImages from './Image Gallery/2.5DPlatformer';
 
 function App() {
     const gitHubLocation = "https://github.com/BrantleeMercer?tab=repositories";
@@ -36,6 +37,12 @@ function App() {
         "2 April 2023",
         GLI1Images,
         "https://github.com/BrantleeMercer/GLI_Framework_Assignment");
+
+    const Platformer2D = new CourseInfo("2.5D Platformer",
+        "Creating a 2.5D platformer was a great endeavor.  This project shows off capabilities such as moving elevator platforms and animating a 3D character to move in a 2D space.  During this course I was also able to learn more about Timeline animations.  Learning when the appropriate time to take control of a character and when to simply move between animations will help future projects become a little more cohesive.",
+        "21 August 2023",
+        PlatformerImages,
+        "https://github.com/BrantleeMercer/2.5DCertRequirement");
     
     return (
     <div className="App">
@@ -48,6 +55,7 @@ function App() {
           <InformationContainer courseTitle={beautifulGamesInfo.courseTitle} courseDescription={beautifulGamesInfo.courseDescription} dateCompleted={beautifulGamesInfo.completionDate} courseImageFolder={beautifulGamesInfo.courseImages} destinationLinkURL={beautifulGamesInfo.projectURL}/>
           <InformationContainer courseTitle={newInputSystemCCInfo.courseTitle} courseDescription={newInputSystemCCInfo.courseDescription} dateCompleted={newInputSystemCCInfo.completionDate} courseImageFolder={newInputSystemCCInfo.courseImages} destinationLinkURL={newInputSystemCCInfo.projectURL}/>
           <InformationContainer courseTitle={GLI1Info.courseTitle} courseDescription={GLI1Info.courseDescription} dateCompleted={GLI1Info.completionDate} courseImageFolder={GLI1Info.courseImages} destinationLinkURL={GLI1Info.projectURL}/>
+          <InformationContainer courseTitle={Platformer2D.courseTitle} courseDescription={Platformer2D.courseDescription} dateCompleted={Platformer2D.completionDate} courseImageFolder={Platformer2D.courseImages} destinationLinkURL={Platformer2D.projectURL}/>
       </div>
     </div>
 );
