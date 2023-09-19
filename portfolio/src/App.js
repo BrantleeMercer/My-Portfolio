@@ -6,7 +6,7 @@ import SpaceShooterImages from './Image Gallery/Space Shooter/ImagePool';
 import BeautifulGamesImages from './Image Gallery/Beautiful Games/ImagePool';
 import NewInputSystemCCImages from './Image Gallery/New Input CC/ImagePool';
 import GLI1Images from './Image Gallery/GLI 1/ImagePool';
-import PlatformerImages from './Image Gallery/2.5DPlatformer';
+import PlatformerImages from './Image Gallery/2.5DPlatformer/ImagePool';
 
 function App() {
     const gitHubLocation = "https://github.com/BrantleeMercer?tab=repositories";
