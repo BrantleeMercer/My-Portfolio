@@ -4,7 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import { ReactComponent as GitHubLogo } from "../Saved-SVG-Files/GitHubLogo.svg";
 import { ReactComponent as LinkedInLogo } from "../Saved-SVG-Files/LinkedInLogo.svg";
 import { ReactComponent as EmailLogo } from "../Saved-SVG-Files/envelope-solid.svg";
-import Resume from "../Misc/Resume.pdf";
+import Resume from "../Misc/Brantlee_Mercer_Resume.pdf";
 
 export default function CustomHeader(props) {
     
