@@ -4,7 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import { ReactComponent as GitHubLogo } from "../Saved-SVG-Files/GitHubLogo.svg";
 import { ReactComponent as LinkedInLogo } from "../Saved-SVG-Files/LinkedInLogo.svg";
 import { ReactComponent as EmailLogo } from "../Saved-SVG-Files/envelope-solid.svg";
-import Resume from "../Misc/Resume10-18-2023.pdf";
+import Resume from "../Misc/BrantleeResume.pdf";
 
 export default function CustomHeader(props) {
     
@@ -18,9 +18,9 @@ export default function CustomHeader(props) {
                 <h2>Brantlee Mercer</h2>
             </div>
             <div className={"Resume-Section"}>
-                {/* <a href={Resume} download={"Brantlee Mercer Resume"} target={"_blank"} rel={"noreferrer"}>
+                { <a href={Resume} download={"Brantlee Mercer Resume"} target={"_blank"} rel={"noreferrer"}>
                     <button type={"button"} className={"btn btn-secondary"}>Resume</button>
-                </a> */}
+                </a> }
             </div>
             <div className={"Links-Section"}>
                 <button onClick={() => {handleGoToNewPage(props.githubLocation)}} className={"btn"}>
